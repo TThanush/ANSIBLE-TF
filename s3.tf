@@ -23,6 +23,16 @@ status = "Enabled"
 }
 } 
 
+ansible-config init --disabled --format ini > ansible.cfg
+
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "vijay.aws.moonobucket"
+key = "prod/terraform.tfstate"
+}
+}
+
 
 
 
