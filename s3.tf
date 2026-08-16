@@ -17,7 +17,7 @@ resource "aws_s3_bucket_acl" "three" {
 }
 
 resource "aws_s3_bucket_versioning" "three" {
-bucket = devops_s3_bucket.abc.id
+bucket = devops_aws_bucket.abc.id
 versioning_configuration {
 status = "Enabled"
 }
