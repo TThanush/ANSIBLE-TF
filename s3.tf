@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "abc" {
-  bucket = "devops.aws.bucket"
+  bucket = "vijay-devops-app-bucket-2026"
 }
 
 resource "aws_s3_bucket_ownership_controls" "def" {
