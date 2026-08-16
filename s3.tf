@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "vijay.bucket"
+  bucket = "vijay-terraform-state.bucket"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -26,7 +26,7 @@ status = "Enabled"
 terraform {
 backend "s3" {
 region = "ap-south-1"
-bucket = "vijay.bucket"
+bucket = "vijay-terraform-state.bucket"
 key = "prod/terraform.tfstate"
 }
 }
