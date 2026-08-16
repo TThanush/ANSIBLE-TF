@@ -23,6 +23,16 @@ status = "Enabled"
 }
 } 
 
+terraform {
+backend "s3" {
+region = "ap-south-1"
+bucket = "devops.aws.bucket"
+key = "prod/terraform.tfstate"
+}
+}
+
+
+
 
 
 
