@@ -23,6 +23,14 @@ status = "Enabled"
 }
 } 
 
+terraform {
+backend "s3" {
+region = "ap-south-1"
+bucket = "vijay.aws.moonobucket"
+key = "prod/terraform.tfstate"
+}
+}
+
 
 
 
