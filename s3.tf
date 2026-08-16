@@ -25,7 +25,7 @@ status = "Enabled"
 
 terraform {
 backend "s3" {
-region = "us-east-1"
+region = "ap-south-1"
 bucket = "vijay.aws.moonobucket"
 key = "prod/terraform.tfstate"
 }
