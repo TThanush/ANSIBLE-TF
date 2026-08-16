@@ -23,8 +23,6 @@ status = "Enabled"
 }
 } 
 
-ansible-config init --disabled --format ini > ansible.cfg
-
 terraform {
 backend "s3" {
 region = "us-east-1"
